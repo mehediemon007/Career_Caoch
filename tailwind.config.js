@@ -4,7 +4,11 @@ module.exports = {
     "./*.{html,js}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        siliguri: ['Hind Siliguri', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
