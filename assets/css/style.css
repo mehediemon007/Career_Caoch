@@ -907,26 +907,7 @@ input::placeholder {
 /* Testimonial */
 
 .client-reviews .owl-stage-outer{
-    overflow: visible;
     padding-bottom: 32px;
-}
-
-.client-reviews .owl-item{
-    opacity: 0;
-    visibility: hidden;
-    cursor: not-allowed;
-    pointer-events: none;
-}
-
-.client-reviews .owl-item.active{
-    opacity: 1;
-    visibility: visible;
-    cursor: pointer;
-    pointer-events: auto;
-}
-
-.client-reviews .owl-item.middle .single-review{
-    box-shadow: 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
 }
 
 .owl-carousel .owl-dots {
@@ -939,44 +920,33 @@ input::placeholder {
 .owl-carousel .owl-dot {
     margin: 5px;
     outline: none;
-    width: 16px;
-    height: 16px;
-    border: 1px solid var(--text-color) !important;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background: transparent;
+    background: #D9D9D9 !important;
     transition: 0.3s;
 }
   
 .owl-carousel .owl-dot.active {
-background: var(--primary-color);
-box-shadow: inset 0 0 0 3px #fff;
-}
-
-.cc-testimonial{
-    position: relative;
-    padding: 140px 0 60px;
-    z-index: 1;
-}
-
-.cc-testimonial::before{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80%;
-    background: url("../images/shapes/testimonial-curve.png") no-repeat left -40%;
-    background-size: cover;
-    z-index: -1;
+    background: var(--primary-color) !important;
+    box-shadow: inset 0 0 0 2px #fff;
 }
 
 .single-review{
     position: relative;
     background-color: var(--white-color);
-    border: 1px solid #EDEDED;
-    box-shadow: none;
+    border: 1px solid #FDBC64;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin-top:30px;
+    padding: 32px 8px 32px 16px;
     transition: box-shadow var(--transition) ease-in;
+}
+
+.client-reviews .owl-item.center .single-review{
+    position: relative;
+    top: 20%;
+    box-shadow: 0px 67px 80px rgba(55, 52, 169, 0.07), 0px 43.4259px 46.8519px rgba(55, 52, 169, 0.0531481), 0px 25.8074px 25.4815px rgba(55, 52, 169, 0.0425185), 0px 13.4px 13px rgba(55, 52, 169, 0.035), 0px 5.45926px 6.51852px rgba(55, 52, 169, 0.0274815), 0px 1.24074px 3.14815px rgba(55, 52, 169, 0.0168519);
 }
 
 .single-review .review-content{
@@ -986,20 +956,7 @@ box-shadow: inset 0 0 0 3px #fff;
 .quote{
     position: absolute;
     top: -25px;
-    left: 25px;
-    display: inline-block;
-    width: 54px;
-    height: 54px;
-    font-size: 20px;
-    color: var(--white-color);
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    text-align: center;
-    line-height: 54px;
-}
-
-.review-ratings span{
-    color: #FE8B75;
+    right: 25%;
 }
 
 .review-msg{
@@ -1009,23 +966,21 @@ box-shadow: inset 0 0 0 3px #fff;
 }
 
 .single-review .client{
-    display: grid;
-    grid-template-columns: 40px 1fr;
+    display: flex;
     align-items: center;
-    grid-column-gap: 10px;
-    border-top: 1px solid #EAEFF3;
-    padding: 24px;
+    gap: 16px;
+    margin-bottom: 32px;
 }
 
 .client-desig h6{
-    font-size: 14px;
-    font-weight: var(--font-weight-bold);
-    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .client-desig p{
-    font-size: 12px;
-    line-height: 14.52px;
+    font-size: 14px;
+    color: #525252;
+    line-height: 23px;
 }
 
 /* News */
