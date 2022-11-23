@@ -6,8 +6,9 @@
     /* Colors */
     --primary-color: #3734A9;
     --secondary-color: #C1521B;
-    --title-color: #0C0047;
-    --text-color: #64607D;
+    --title-color: #000000;
+    --text-color: #000000;
+    --text-light: #525252;
     --body-bg-color:  #F1F5FF;
     --white-color: #ffffff;
 
@@ -75,9 +76,9 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5rem;
-    font-weight: var(--font-weight-bolder);
-    line-height: 55px;
+    font-size: 2rem;
+    font-weight: var(--font-weight-semi-bold);
+    line-height: 52px;
 }
 
 h3 {
@@ -246,7 +247,7 @@ input::placeholder {
 }
 
 .sec-spacer {
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 .sec-spacer-50 {
@@ -254,11 +255,11 @@ input::placeholder {
 }
 
 .sec-spacer-top{
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .sec-spacer-bottom{
-    padding-bottom: 100px;
+    padding-bottom: 70px;
 }
 
 .cc-btn{
@@ -389,98 +390,93 @@ input::placeholder {
     vertical-align: baseline;
 }
 
-/* Service */
+/* Course topics */
 
 .sec-heading p{
-    margin: 20px auto 0;
+    margin: 0 auto;
 }
 
-.service-content h2,
-.contact-content h2{
-    line-height: 60px;
-    margin-bottom: 40px;
-}
-
-.single-service{
-    background-color: #E8FFFF;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    padding: 55px 40px;
+.single-topic{
+    background-color: var(--white-color);
+    border: 1px solid rgba(241, 102, 34, 0.4);
+    /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25); */
+    border-radius: 10px;
+    padding: 32px 24px 16px;
     text-align: center;
     transition: transform var(--transition) ease-in-out;
 }
 
-.services-wpr div[class^='col-']:nth-child(2) .single-service{
-    background-color: #E4F6FF;
-}
-
-.services-wpr div[class^='col-']:nth-child(3) .single-service{
-    background-color: #FFF0F1;
-}
-
-.services-wpr div[class^='col-']:nth-child(3) .single-service{
-    background-color: #FFF0F1;
-}
-
-.services-wpr div[class^='col-']:nth-child(4) .single-service{
-    background-color: #E8E4FF;
-}
-
-.services-wpr div[class^='col-']:nth-child(5) .single-service{
-    background-color: #FFE7D6;
-}
-
-.services-wpr div[class^='col-']:nth-child(6) .single-service{
-    background-color: #DAECFF;
-}
-
-.services-wpr div[class^='col-']:nth-child(7) .single-service{
-    background-color: #E1FCFF;
-}
-
-.services-wpr div[class^='col-']:nth-child(8) .single-service{
-    background-color: #FFDAE8;
-}
-
-.single-service:hover{
+.single-topic:hover{
     transform: translateY(-10px) !important;
-    box-shadow: 1px 30px 100px 10px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 1px 30px 100px 10px rgba(0, 0, 0, 0.25); */
 }
 
-.single-service .service-content h6{
+.single-topic .topic-content h6{
+    font-size: 16px;
+    font-weight: var(--font-weight-medium);
+    line-height: 26px;
+    margin: 16px 0 4px;
+}
+
+.single-topic .topic-content p{
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 23px;
+}
+
+/* Courses */
+
+.single-course{
+    background: var(--white-color);
+    border: 1px solid rgba(55, 52, 169, 0.1);
+    box-shadow: 0px 67px 80px rgba(55, 52, 169, 0.07);
+    border-radius: 10px;
+}
+
+.single-course .course-content .course-meta-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #A9A9A9;
+    padding: 16px;
+}
+
+.ratings i{
+    font-size: 12px;
+}
+
+.rated{
+    color: #FFA800;
+}
+
+.course-content .course-name h5{
     font-size: 20px;
-    font-weight: var(--font-weight-bold);
-    margin: 24px 0 10px;
+    font-weight: var(--font-weight-medium);
+    line-height: 32px;
+    margin-bottom: 20px;
+    padding: 0 16px;
 }
 
-.single-service .service-content p{
-    font-size: .93rem;
-    font-weight: var(--title-font);
-    line-height: 24px;
+.course-content .course-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: var(--font-weight-medium);
+    line-height: 29px;
+    border-top: 1px solid rgba(55, 52, 169, 0.1);
+    padding: 16px;
 }
 
-.cc-service .bg-shapes img{
-    top: 0;
-    right: auto;
-    left: 0;
-    animation: float-bob-x 3s linear infinite;
+.course-content .read-more{
+    color: var(--primary-color);
 }
 
-.service-2 .single-service{
-    display: grid;
-    grid-template-columns: 70px 1fr;
-    align-items: flex-start;
-    grid-gap: 24px;
-    text-align: left;
+.course-content .read-more:hover{
+    text-decoration: underline;
 }
 
-.service-2 .single-service h6{
-    margin-top: 0;
-}
-
-.service-2 .single-service p{
-    max-width: 65%;
-}
 
 /* Service Process */
 
