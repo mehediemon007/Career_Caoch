@@ -928,6 +928,28 @@ input::placeholder {
 
 /* Contact */
 
+.contact-info{
+    background: #FFFFFF;    
+    border: 1px solid rgba(55, 52, 169, 0.1);
+    border-radius: 20px;
+    padding: 24px 24px 40px;
+}
+
+.contact-info li,
+.contact-info a{
+    font-size: 18px;
+    font-weight: var(--font-weight-medium);
+    color: var(--text-color);
+    margin: 2px 0;
+}
+
+.customer-support-wpr{
+    background: #FFFFFF;
+    border: 1px solid #FDBC64;
+    border-radius: 20px;
+    padding: 50px;
+}
+
 .contact-form{
     position: relative;
     background: #FFFFFF;
