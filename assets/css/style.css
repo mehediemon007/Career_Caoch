@@ -651,8 +651,9 @@ input::placeholder {
     margin-top: 10px;
 }
 
-.single-blog .blog-content .blog-title{
-    display: inline-block;
+.single-blog .blog-title h6{
+    font-size: 20px;
+    font-weight: var(--font-weight-semi-bold);
     margin: 16px 0;
 }
 
@@ -661,8 +662,17 @@ input::placeholder {
 }
 
 .sidebar-blogs .single-blog{
-    padding: 12px 0;
-    border-bottom: 1px solid #DEE1E6;
+    padding: 24px 0;
+    border-top: 1px solid #DEE1E6;
+}
+
+.sidebar-blogs .blog-content .meta-data{
+    margin-top: 0;
+}
+
+.sidebar-blogs .blog-title h6{
+    font-size: 18px;
+    margin: 4px 0 0;
 }
 
 .cc-pagination a{
@@ -677,7 +687,8 @@ input::placeholder {
     margin-right: 5px;
 }
 
-.cc-pagination a:hover{
+.cc-pagination a:hover,
+.cc-pagination a.active{
     color: var(--white-color);
     background-color: var(--primary-color);
 }
