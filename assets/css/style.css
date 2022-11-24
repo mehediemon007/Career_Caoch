@@ -352,8 +352,13 @@ input::placeholder {
     background: url("../images/shapes/banner-shape.png") no-repeat center;
     background-size: cover;
     background-color: var(--white-color);
-    padding: 100px 0;
+    padding: 130px 0;
+    text-align: center;
     z-index: 1;
+}
+
+.cc-banner .container{
+    position: relative;
 }
 
 .cc-banner .banner-content h1{
@@ -363,9 +368,10 @@ input::placeholder {
     letter-spacing: -0.03em;
 }
 
-.cc-banner .banner-image{
-    /* animation: float-bob-x 3s linear infinite;
-    z-index: -1; */
+.cc-banner .banner-content p{
+    max-width: 512px;
+    font-weight: var(--font-weight-medium);
+    margin: 24px auto;
 }
 
 .cc-sec-banner::before{

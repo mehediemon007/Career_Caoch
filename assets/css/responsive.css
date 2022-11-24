@@ -8,9 +8,8 @@
 
     .cc-banner .banner-image{
         position: absolute;
-        width: 50%;
-        top: 0;
-        right: 0;
+        top: -15%;
+        right: -5%;
     }
 
     .single-process:nth-child(3){
