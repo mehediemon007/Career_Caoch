@@ -357,10 +357,6 @@ input::placeholder {
     z-index: 1;
 }
 
-.cc-banner .container{
-    position: relative;
-}
-
 .cc-banner .banner-content h1{
     font-weight: 600;
     font-size: 60px;

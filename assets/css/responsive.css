@@ -1,3 +1,12 @@
+/* Min Width 1600px */
+@media only screen and (min-width:1600px){
+
+    .cc-banner .banner-image{
+        right: 7% !important;
+    }
+
+}
+
 /* Min Width 1400px */
 @media only screen and (min-width:1400px){
 
@@ -8,8 +17,8 @@
 
     .cc-banner .banner-image{
         position: absolute;
-        top: -15%;
-        right: -5%;
+        top: 10%;
+        right: 0;
     }
 
     .single-process:nth-child(3){
