@@ -20,11 +20,12 @@
 
     $(".client-reviews").owlCarousel({
         loop:true,
-        autoplay:true,
+        autoplay:false,
         margin:24,
         nav:false,
         dotsEach: 2,
         smartSpeed:500,
+        stagePadding: 16,
         responsive:{
             0:{
                 items: 1.25
