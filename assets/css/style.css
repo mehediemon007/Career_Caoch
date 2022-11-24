@@ -133,7 +133,6 @@ button {
 input::placeholder {
     font-size: 1rem;
     font-weight: var(--font-weight-small);
-    color: var(--text-color-light);
 }
 
 /* General Css */
