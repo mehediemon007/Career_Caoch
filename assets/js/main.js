@@ -54,24 +54,8 @@
     $(".nav-search i").on("click",function(){
         $(".nav-search form").toggleClass("open")
     })
-
-    // Mobile Menu
-
-    $(".nav-toggle").on("click",function(){
-        $(".nav-list").addClass("open")
-    })
-
-    $(".nav-close").on("click",function(){
-        $(".nav-list").removeClass("open")
-    })
-
-    $(".nav-list li a").on("click",function(){
-        if($(".nav-list").hasClass("open")){
-            $(".nav-list").removeClass("open")
-        }
-    })
-
-     // Magnifig Popup
+    
+    // Magnifig Popup
      if($(".videolink").length){
         
         $('.videolink').magnificPopup({
