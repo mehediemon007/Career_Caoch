@@ -366,7 +366,7 @@ section{
 
 .cc-banner{
     position: relative;
-    background: url("../images/banner-shape.png") no-repeat left;
+    background: url("../images/banner-shape.png") no-repeat 15%;
     background-size: cover;
     background-color: var(--white-color);
     padding: 130px 0;

@@ -2,7 +2,7 @@
 @media only screen and (min-width:1600px){
 
     .cc-banner .banner-image{
-        right: 12% !important;
+        right: 8% !important;
     }
 
 }
@@ -19,6 +19,7 @@
         position: absolute;
         top: 10%;
         right: 0;
+        width: 50%;
     }
 
     .single-process:nth-child(3){
