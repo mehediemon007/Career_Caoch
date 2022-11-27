@@ -544,7 +544,7 @@ section{
 
 /* Course Details */
 
-.course-meta-data{
+.cc-course-details .course-meta-data{
     background: #FFFFFF;
     border: 1px solid rgba(55, 52, 169, 0.1);
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
@@ -1009,9 +1009,11 @@ button.mfp-close {
 
 .owl-carousel .owl-dots {
     position: absolute;
-    display: inline-block;
     bottom: 0;
-    left: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 .owl-carousel .owl-dot {
@@ -1031,7 +1033,7 @@ button.mfp-close {
 
 .client-reviews .owl-stage{
     display: flex;
-    padding-bottom: 50px;
+    padding: 80px 0 60px;
 }
 
 .single-review{
@@ -1043,14 +1045,23 @@ button.mfp-close {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin-top:30px;
     padding: 32px 20px 4px;
-    transition: box-shadow var(--transition) ease-in;
 }
 
-.client-reviews .owl-item.center .single-review{
-    position: relative;
-    top: 20%;
+.client-reviews .owl-item.active + .owl-item.active .single-review{
+    top: -20%;
     box-shadow: 0px 67px 80px rgba(55, 52, 169, 0.07), 0px 43.4259px 46.8519px rgba(55, 52, 169, 0.0531481), 0px 25.8074px 25.4815px rgba(55, 52, 169, 0.0425185), 0px 13.4px 13px rgba(55, 52, 169, 0.035), 0px 5.45926px 6.51852px rgba(55, 52, 169, 0.0274815), 0px 1.24074px 3.14815px rgba(55, 52, 169, 0.0168519);
 }
+
+.client-reviews .owl-item.active + .owl-item.active + .owl-item.active .single-review{
+    top: 0;
+    box-shadow: none;
+}
+
+/* .client-reviews .owl-item.center .single-review{
+    position: relative;
+    top: -20%;
+    box-shadow: 0px 67px 80px rgba(55, 52, 169, 0.07), 0px 43.4259px 46.8519px rgba(55, 52, 169, 0.0531481), 0px 25.8074px 25.4815px rgba(55, 52, 169, 0.0425185), 0px 13.4px 13px rgba(55, 52, 169, 0.035), 0px 5.45926px 6.51852px rgba(55, 52, 169, 0.0274815), 0px 1.24074px 3.14815px rgba(55, 52, 169, 0.0168519);
+} */
 
 .single-review .review-content{
     padding: 50px 24px 24px;

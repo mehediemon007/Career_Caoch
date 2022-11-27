@@ -20,7 +20,7 @@
 
     $(".client-reviews").owlCarousel({
         loop:true,
-        autoplay:false,
+        autoplay:true,
         margin:24,
         nav:false,
         dotsEach: 2,
@@ -34,7 +34,9 @@
                 items: 3
             },
         }
-    })
+    });
+
+
 
     // Counter
 
@@ -198,5 +200,7 @@
             this.scrollY > 80 ? headerContainer.classList.add("fixed") : headerContainer.classList.remove("fixed");
         }
     }
+
+    
 
 })()
