@@ -1228,14 +1228,28 @@ button.mfp-close {
 
 /* Slider */
 
+.banner-preview{
+    margin-bottom: 40px;
+}
+
+.banner-preview img{
+    border: 1px solid #FC9100;
+    border-radius: 20px;
+}
+
+.banner-thumb img{
+    border: 2px dotted transparent;
+    border-radius: 20px;
+}
+
 .banner-slider .banner-thumb .owl-item {
     cursor: pointer;
     transition: .1s;
 }
 
-.banner-thumb .owl-item.current,
-.banner-thumb .owl-item:hover {
-    
+.banner-thumb .owl-item.current img,
+.banner-thumb .owl-item:hover img{
+    border-color: #FC9100;
 }
 
 /* Footer */
