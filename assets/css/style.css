@@ -984,10 +984,6 @@ button.mfp-close {
     margin: 16px 0 32px;
 }
 
-.cc-about-us .cc-seminar .sec-heading p{
-    max-width: 70%;
-}
-
 /* Newsletter */
 
 .cc-news-letter{
@@ -1228,6 +1224,18 @@ button.mfp-close {
 
 .login-form .cc-btn:hover{
     color: var(--white-color);
+}
+
+/* Slider */
+
+.banner-slider .banner-thumb .owl-item {
+    cursor: pointer;
+    transition: .1s;
+}
+
+.banner-thumb .owl-item.current,
+.banner-thumb .owl-item:hover {
+    
 }
 
 /* Footer */

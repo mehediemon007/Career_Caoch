@@ -92,6 +92,10 @@
         max-width: 50%;
     }
 
+    .sec-heading p.mw-70{
+        max-width: 70%;
+    }
+
 }
 
 /* Max Width 1199px */
