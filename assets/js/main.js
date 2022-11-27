@@ -68,6 +68,29 @@
             $(".nav-list").removeClass("open")
         }
     })
+
+     // Magnifig Popup
+     if($(".videolink").length){
+        
+        $('.videolink').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false,
+            iframe: {
+                patterns: {
+                   youtube: {
+                      index: 'youtube.com/', 
+                      id: 'v=', 
+                      src: 'http://www.youtube.com/embed/%id%?autoplay=1' 
+                  }
+                }
+            }
+        });
+
+    }
       
 
 })(jQuery);

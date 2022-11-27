@@ -261,6 +261,10 @@ input::placeholder {
     padding-bottom: 80px;
 }
 
+.scroll-mt{
+    scroll-margin-top: 180px;
+}
+
 .cc-btn{
     display: inline-block;
     width: max-content;
@@ -312,9 +316,19 @@ input::placeholder {
 /* Header */
 
 .header-wpr{
+    position: relative;
+    width: 100%;
     background-color: var(--white-color);
     box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.15);
     margin-bottom: 8px;
+    z-index: 100;
+    transition: .3s ease-in;
+}
+
+.header-wpr.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .cc-nav-menu{
@@ -521,6 +535,156 @@ input::placeholder {
 
 .com-courses-wpr .course-content h6{
     font-weight: var(--font-weight-semi-bold);
+}
+
+/* Course Details */
+
+.course-meta-data{
+    background: #FFFFFF;
+    border: 1px solid rgba(55, 52, 169, 0.1);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.course-meta-data ul{
+    display: flex;
+    border-top: 1px solid rgba(55, 52, 169, 0.1);
+}
+
+.course-meta-data li a{
+    display: inline-block;
+    color: var(--primary-color);
+    padding: 8px 0;
+    margin: 0 16px;
+}
+
+.course-meta-data li a.active{
+    color: #EF4A4A;
+    border-bottom: 2px solid #EF4A4A;
+}
+
+.mentor-details{
+    background: #FFFFFF;    
+    border: 1px solid rgba(55, 52, 169, 0.1);
+    border-radius: 10px;
+    padding: 24px;
+    margin-top: 16px;
+}
+
+.course-payment{
+    background: #F3F5F9;
+    border: 1px solid #FDBC64;
+    border-radius: 20px;
+    padding: 24px;
+    margin: 40px 0;
+}
+
+.about-course p{
+    background: #FFFFFF;    
+    border: 1px solid rgba(55, 52, 169, 0.1);
+    border-radius: 10px;
+    padding: 24px;
+    margin-top: 16px;
+}
+
+.course-content .course-info{
+    background: #FFFFFF;
+    border: 1px solid rgba(55, 52, 169, 0.1);
+    box-shadow: 0px 1.24074px 3.14815px rgba(55, 52, 169, 0.0168519);
+    border-radius: 0 0 10px 10px;
+    padding: 24px;
+}
+
+.course-info ul li{
+    font-weight: var(--font-weight-small);
+    margin-bottom: 8px;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.vid-icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+    color: var(--primary-color);
+    background: #F3F5F9;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 54px;
+    animation-name: ripple;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    z-index: 5;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 #fff4, 0 0 0 0 #fff4;
+    }
+
+    80% {
+        box-shadow: 0 0 0 20px #fff0, 0 0 0 30px #fff0;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 #fff0, 0 0 0 0 #fff0;
+    }
+}
+  
+.vid-icon img {
+    width: 27px;
+    min-height: 27px;
+    height: 27px;
+    margin-left: 5px;
+}
+
+.mfp-wrap .mfp-close {
+    cursor: pointer;
+    background: var(--white-color);
+    border: 0;
+    outline: 0;
+    padding: 0;
+    display: block;
+    z-index: 1046;
+    box-shadow: none;
+    text-align: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    color: var(--primary-color);
+    opacity: 1;
+}
+
+button.mfp-close {
+    overflow: visible;
+    cursor: pointer;
+    background: white;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    display: block;
+    z-index: 1046;
+    box-shadow: none;
+}
+
+.mfp-close {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    color: black;
 }
 
 /* Faq */
