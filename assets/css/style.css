@@ -984,6 +984,10 @@ button.mfp-close {
     margin: 16px 0 32px;
 }
 
+.cc-about-us .cc-seminar .sec-heading p{
+    max-width: 70%;
+}
+
 /* Newsletter */
 
 .cc-news-letter{
