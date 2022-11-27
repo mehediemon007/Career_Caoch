@@ -18,7 +18,7 @@
     
     // Client Review
 
-    $(".client-reviews").owlCarousel({
+    const owl = $(".client-reviews").owlCarousel({
         loop:true,
         autoplay:true,
         margin:24,
@@ -34,6 +34,25 @@
                 items: 3
             },
         }
+    });
+
+    // Slider Center Div
+
+    var activeElement = $('.client-reviews .owl-item.active');
+    $(activeElement[1]).addClass("middle")
+    // activeElement.eq(0).addClass('selezionato');
+
+    owl.on('changed.owl.carousel', function(event) {
+
+        $(".client-reviews .owl-item").each(function( index, value ) {
+            if($(value).hasClass("middle")){
+                $(value).removeClass("middle")
+            }
+        });
+
+        activeElement = $('.client-reviews .owl-item.active');
+        $(activeElement[2]).addClass("middle")
+
     });
 
 
@@ -198,7 +217,5 @@
         $(".sub-menu").slideToggle("200");
         
     })
-
-    
 
 })()

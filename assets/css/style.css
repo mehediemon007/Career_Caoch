@@ -1047,7 +1047,7 @@ button.mfp-close {
     padding: 32px 20px 4px;
 }
 
-.client-reviews .owl-item.active + .owl-item.active .single-review{
+/* .client-reviews .owl-item.active + .owl-item.active .single-review{
     top: -20%;
     box-shadow: 0px 67px 80px rgba(55, 52, 169, 0.07), 0px 43.4259px 46.8519px rgba(55, 52, 169, 0.0531481), 0px 25.8074px 25.4815px rgba(55, 52, 169, 0.0425185), 0px 13.4px 13px rgba(55, 52, 169, 0.035), 0px 5.45926px 6.51852px rgba(55, 52, 169, 0.0274815), 0px 1.24074px 3.14815px rgba(55, 52, 169, 0.0168519);
 }
@@ -1055,13 +1055,13 @@ button.mfp-close {
 .client-reviews .owl-item.active + .owl-item.active + .owl-item.active .single-review{
     top: 0;
     box-shadow: none;
-}
+} */
 
-/* .client-reviews .owl-item.center .single-review{
+.client-reviews .owl-item.middle .single-review{
     position: relative;
     top: -20%;
     box-shadow: 0px 67px 80px rgba(55, 52, 169, 0.07), 0px 43.4259px 46.8519px rgba(55, 52, 169, 0.0531481), 0px 25.8074px 25.4815px rgba(55, 52, 169, 0.0425185), 0px 13.4px 13px rgba(55, 52, 169, 0.035), 0px 5.45926px 6.51852px rgba(55, 52, 169, 0.0274815), 0px 1.24074px 3.14815px rgba(55, 52, 169, 0.0168519);
-} */
+}
 
 .single-review .review-content{
     padding: 50px 24px 24px;
