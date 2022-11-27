@@ -192,7 +192,7 @@
 
     .cc-nav-menu{
         position: absolute;
-        top: 65px;
+        top: 60px;
         left: 0;
         display: none;
         width: 100%;
@@ -361,6 +361,16 @@
 /* Max Width 480px */
 
 @media only screen and (max-width:480px){
+
+    .header-wpr{
+        padding: 16px 0;
+        margin-bottom: 0;
+    }
+
+    .nav-action .cc-btn{
+        height: 40px;
+        line-height: 40px;
+    }
 
     h2{
         font-size: 2.25rem;

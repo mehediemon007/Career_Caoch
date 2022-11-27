@@ -201,6 +201,20 @@
         }
     }
 
+    var navToggle = document.querySelector(".nav-toggle");
+
+    navToggle.addEventListener("click",()=>{
+
+       $(".cc-nav-menu").slideToggle("200");
+
+    })
+
+    $("li.menu-item-has-children").on("click",function(){
+
+        $(".sub-menu").slideToggle("200");
+        
+    })
+
     
 
 })()
