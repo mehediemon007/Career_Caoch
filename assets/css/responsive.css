@@ -167,11 +167,19 @@
 
     .sec-spacer,
     .cc-banner{
-        padding: 80px 0;
+        padding: 60px 0;
+    }
+
+    .sec-spacer-top{
+        padding-top: 60px;
+    }
+    
+    .sec-spacer-bottom{
+        padding-bottom: 60px;
     }
 
     .cc-contact{
-        padding-top: 80px;
+        padding-top: 60px;
     }
 
     /* Mobile Menu Start */
@@ -377,6 +385,12 @@
         line-height: 50px;
     }
 
+    .cc-sec-banner .banner-content{
+        position: relative;
+        background-color: #3440a9;
+        padding: 16px 0;
+    }
+
     .sec-news h2{
         font-size: 32px;
         line-height: 45px;
@@ -398,6 +412,16 @@
 
     .client-reviews .owl-stage{
         padding-top: 0;
+    }
+
+    .blog-cat-links{
+        gap: 8px;
+        justify-content: space-between;
+    }
+
+    .customer-support-wpr{
+        padding: 24px 16px;
+        margin: 0 2px;
     }
 
     h2{
