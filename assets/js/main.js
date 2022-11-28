@@ -1,9 +1,9 @@
 ;(function($){
 
-    // woww Animation
+    // WOW Animation
     
     $(document).ready(function () {
-        new wow().init();
+        new wow().init()
     });
 
     // Hero Banner

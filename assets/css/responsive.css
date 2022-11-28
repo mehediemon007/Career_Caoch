@@ -368,6 +368,10 @@
         padding-right: 0;
     }
 
+    .cc-sec-banner .main-banner{
+        display: none;
+    }
+
 }
 
 /* Max Width 480px */
@@ -384,15 +388,15 @@
         line-height: 40px;
     }
 
-    .cc-banner .banner-content h1{
-        font-size: 36px;
-        line-height: 50px;
+    .banner-content h1{
+        font-size: 2.25rem !important;
+        line-height: 50px !important;
     }
 
-    .cc-sec-banner .banner-content{
-        position: relative;
-        background-color: #3440a9;
-        padding: 16px 0;
+    .cc-sec-banner .banner-content p{
+        max-width: 320px;
+        font-size: 14px;
+        line-height: 1.75;
     }
 
     .sec-news h2{
