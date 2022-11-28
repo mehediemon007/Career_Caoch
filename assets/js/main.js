@@ -6,6 +6,8 @@
         new wow().init()
     });
 
+    $('.owl-dots button').attr('aria-label', 'owl-btn');
+
     // Hero Banner
 
     $(".hero-banner-wpr").owlCarousel({
