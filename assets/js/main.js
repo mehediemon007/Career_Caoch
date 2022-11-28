@@ -3,7 +3,7 @@
     // woww Animation
     
     $(document).ready(function () {
-        new woww().init();
+        new wow().init();
     });
 
     // Hero Banner
