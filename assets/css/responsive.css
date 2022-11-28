@@ -372,6 +372,10 @@
         display: none;
     }
 
+    .banner-image{
+        max-height: 300px;
+    }
+
 }
 
 /* Max Width 480px */
@@ -394,9 +398,10 @@
     }
 
     .cc-sec-banner .banner-content p{
-        max-width: 320px;
+        max-width: 250px;
         font-size: 14px;
-        line-height: 1.75;
+        line-height: 1.65;
+        text-align: justify;
     }
 
     .sec-news h2{
