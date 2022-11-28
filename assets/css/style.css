@@ -634,14 +634,14 @@ section{
 
 /* Syllabus Topics */
 
-.course-topics-wpr{
+.syllabus-topics-wpr{
     background: #FFFFFF;
     border: 1px solid rgba(252, 121, 0, 0.5);
     border-radius: 10px;
     margin-top: 16px;
 }
 
-.course-topics-wpr .course-name{
+.syllabus-topics-wpr .course-name{
     display: flex;
     align-items: center;
     gap: 16px;
@@ -650,7 +650,7 @@ section{
     padding: 12px 24px;
 }
 
-.course-topics-wpr .course-topics{
+.syllabus-topics-wpr .course-topics{
     padding: 0 24px 24px;
 }
 
