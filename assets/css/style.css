@@ -632,6 +632,61 @@ section{
     z-index: 5;
 }
 
+/* Syllabus Topics */
+
+.course-topics-wpr{
+    background: #FFFFFF;
+    border: 1px solid rgba(252, 121, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 16px;
+}
+
+.course-topics-wpr .course-name{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(230, 229, 243, 0.5);
+    border-radius: 10px 10px 0px 0px;
+    padding: 12px 24px;
+}
+
+.course-topics-wpr .course-topics{
+    padding: 0 24px 24px;
+}
+
+.course-topics .topic{
+    border-bottom: 1px solid #D9D9D9;
+    padding: 20px 0 8px;
+}
+
+.topic .topic-label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topic-label h5{
+    color: #354895;
+}
+
+.topic-label h5 > i{
+    font-size: 24px;
+}
+
+.topic-label i {
+    font-size: .80rem;
+    margin: 0 8px;
+}
+
+.topic .topic-details li{
+    list-style: disc;
+    margin: 4px 0 4px 40px;
+}
+
+.hide{
+    display: none !important;
+}
+
 @keyframes ripple {
     0% {
         box-shadow: 0 0 0 0 #fff4, 0 0 0 0 #fff4;

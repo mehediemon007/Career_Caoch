@@ -188,6 +188,14 @@
         });
 
     });
+
+    // Dropdown
+
+    $(".topic-label").on("click", function () {
+        var $this = $(this);
+        // $this.find("i").toggleClass("fa-chevron-down fa-chevron-up");
+        $($this).next().toggleClass("hide");
+    });
       
 
 })(jQuery);
