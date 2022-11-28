@@ -28,7 +28,7 @@
         stagePadding: 16,
         responsive:{
             0:{
-                items: 1.25
+                items: 1
             },
             575:{
                 items: 3

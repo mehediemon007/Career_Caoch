@@ -372,6 +372,34 @@
         line-height: 40px;
     }
 
+    .cc-banner .banner-content h1{
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .sec-news h2{
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    .com-courses-wpr{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 16px;
+    }
+
+    .seminar-wpr{
+        padding: 32px 16px;
+    }
+
+    .services-wpr{
+        grid-template-columns: 1fr;
+    }
+
+    .client-reviews .owl-stage{
+        padding-top: 0;
+    }
+
     h2{
         font-size: 2.25rem;
     }
